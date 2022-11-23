@@ -78,6 +78,16 @@ function empty(){
 }
 
 
+
+function zoomIn() {
+        document.getElementById("image").style.width="1000px"
+        document.getElementById("image").style.height="1000px"
+      }
+
+function zoomOut() {
+        document.getElementById("image").style.width="500px"
+        document.getElementById("image").style.height="500px"
+      }
         
      
 
