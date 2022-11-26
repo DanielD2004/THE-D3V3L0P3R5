@@ -16,30 +16,20 @@
     <div class="imageBox">
         <input id="searchBar" type="search" placeholder="Search Animals...">
         
-        <input onclick="search()" type="submit" value="Search">
+        <input onclick="search()" id="submit" type="submit" value="Search" disabled>
 
         <input onclick="empty()" type="button" value="Clear">
 
         <div  class="listColumn">
-           <p> <ul><u>List of Topics:</u> </ul>
-            <li>Tiger</li>
-            <br>
-            <li>Elephant</li>
-            <br>
-            <li>Cat</li>
-            <br>
-
-            <li>Dog</li>
-            <br>
-            <li>Zebra</li>
-            <br>
-            <li>Lion</li>
-            <br>
-            <li>Monkey</li>
-            <br>
-            <li>Cheetah</li>
-             <br>
-             <li>Gorilla</li></p>
+           <p> List of Topics: </p>
+           <ul>
+                <li><button onclick="loadTopics(1)">Animals</button> </li>
+                <li><button onclick="loadTopics(2)">Heroes</button> </li>
+                <li><button onclick="loadTopics(3)">Places</button> </li>
+                <li><button onclick="loadTopics(4)">Sports</button> </li>
+                <li><button onclick="loadTopics(5)">Cars</button> </li>
+                <li><button onclick="loadTopics(6)">Food</button> </li>
+           </ul>
         </div> 
 
         <br><br>

@@ -1,12 +1,10 @@
-var arr = topics()
-
 function search(){
         var imgTag = document.getElementById("image");
         var search = document.getElementById("searchBar");
         var msg = document.getElementById("message");
-        
+        console.log(arr)
         for (let i = 0; i < arr.length; ++i){
-                let topic = arr[i]
+                let topic = arr[i];
 
                 if (search.value.toLowerCase() == topic.name){
                         imgTag.src = topic.link   
@@ -15,9 +13,17 @@ function search(){
                 }
 
                 if (search.value.toLowerCase() != topic.name){
-                        error()
+                        error();
                 }
         }
+}
+
+
+function loadTopics(num){
+        var arr = topics(num);
+        console.log(arr);
+        document.getElementById("submit").disabled = false;
+        //Need to get value of arr into 'search' function
 }
 
 function empty(){
@@ -28,11 +34,10 @@ function empty(){
 
 function error(){
         var imgTag = document.getElementById("image");
-        imgTag.src="https://www.elegantthemes.com/blog/wp-content/uploads/2020/08/000-http-error-codes.png";
-
+        imgTag.src="images/error.png"
         document.getElementById("message").innerHTML="This topic is not on the list. Try again!";
 
 }
-        
+      
 
 

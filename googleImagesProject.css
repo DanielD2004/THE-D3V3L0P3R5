@@ -62,3 +62,10 @@ footer{
     font-size: 125%;
 
 }
+
+button {
+    height:25px;
+    width:85px;
+    border-radius:25px;
+    margin-bottom:40px;
+}
