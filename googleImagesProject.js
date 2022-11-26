@@ -21,7 +21,7 @@ function search(){
 }
 
 function empty(){
-        document.getElementById("image").src="projectImages/google.png";
+        document.getElementById("image").src="imagefolder/google.png";
         document.getElementById("searchBar").value = "";
         document.getElementById("message").innerHTML="";
 }
