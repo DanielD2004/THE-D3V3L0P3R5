@@ -2,7 +2,11 @@ function search(){
         
         var input = document.getElementById("searchBar");
         var img = document.getElementById("image");
-        
+        for (i=0;i<=8;i++){
+        let listArray = ["tiger", "elephant", "cat", "dog", "zebra", "lion", "monkey", "cheetah", "gorilla"]
+        document.getElementById(listArray[i]).style.color= 'black';
+        }
+    
         input.innerHTML = "";  
         
         /*for(i=0; i<=a.length; i++){
