@@ -20,23 +20,28 @@
 
         <input onclick="empty()" type="button" value="Clear">
 
-        <div  class="listColumn">
-           <p> List of Topics: </p>
-           <ul>
-                <li><button onclick="loadTopics(1)">Animals</button> </li>
-                <li><button onclick="loadTopics(2)">Heroes</button> </li>
-                <li><button onclick="loadTopics(3)">Places</button> </li>
-                <li><button onclick="loadTopics(4)">Sports</button> </li>
-                <li><button onclick="loadTopics(5)">Cars</button> </li>
-                <li><button onclick="loadTopics(6)">Food</button> </li>
-           </ul>
-        </div> 
-
+        <div id="container">
+            <p> List of Topics: </p>
+            <div  id="listColumn">
+            <ul>
+                    <li><button class="topicButton" id="1" onclick="loadTopics(1)">Animals</button> </li>
+                    <li><button class="topicButton" id="2" onclick="loadTopics(2)">Heroes</button> </li>
+                    <li><button class="topicButton" id="3" onclick="loadTopics(3)">Places</button> </li>
+                    <li><button class="topicButton" id="4" onclick="loadTopics(4)">Sports</button> </li>
+                    <li><button class="topicButton" id="5" onclick="loadTopics(5)">Cars</button> </li>
+                    <li><button class="topicButton" id="6" onclick="loadTopics(6)">Food</button> </li>
+                    <!-- is id being a number allowed? -->
+            </ul>
+            </div> 
+        </div>  
         <br><br>
 
-        <img id="image" style="border: 1px solid grey;" src="projectImages/google.png" alt="googleImage"> 
+        <img id="image" src="images/google.png" alt="googleImage"> 
         <br> <br> 
         <p id="message"></p>
+        <div id="subjectRow">
+            <ul></ul>
+        </div>
    
     </div>
 

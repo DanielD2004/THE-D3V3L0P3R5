@@ -25,6 +25,7 @@ footer{
     border-radius:20px;
     margin-left: 240px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: 1px solid grey;
 }
 
 .imageBox{
@@ -40,7 +41,7 @@ footer{
         margin-left: 240px;
 }
 
-.listColumn{
+#container{
     background-color:#bbb;
     padding: 50px;
     padding-left:20px;
@@ -68,4 +69,11 @@ button {
     width:85px;
     border-radius:25px;
     margin-bottom:40px;
+}
+
+#subjectRow{
+    width:auto;
+    height:20px;
+    margin-right:auto;
+    margin-left:auto;
 }

@@ -35,15 +35,15 @@ function topic1(){
 
 function topic2(){  
   let heroes = [
-        {name: "superman", link: "/images/superman.png"},
-        {name: "batman", link: "/images/batman.png"},
-        {name: "ironman", link: "/images/ironman.png"},
-        {name: "spiderman", link: "/images/spiderman.png"},
-        {name: "hulk", link: "/images/hulk.png"},
-        {name: "antman", link: "/images/antman.png"},
-        {name: "thor", link: "/images/thor.png"},
-        {name: "wolverine", link: "/images/wolverine.png"},
-        {name: "hawkeye", link: "/images/hawkeye.png"}]
+        {name: "superman", link: "/images/heroes/superman.png"},
+        {name: "batman", link: "/images/heroes/batman.png"},
+        {name: "ironman", link: "/images/heroes/ironman.png"},
+        {name: "spiderman", link: "/images/heroes/spiderman.png"},
+        {name: "hulk", link: "/images/heroes/hulk.png"},
+        {name: "antman", link: "/images/heroes/antman.png"},
+        {name: "thor", link: "/images/heroes/thor.png"},
+        {name: "wolverine", link: "/images/heroes/wolverine.png"},
+        {name: "hawkeye", link: "/images/heroes/hawkeye.png"}]
     return heroes;
 }
 
