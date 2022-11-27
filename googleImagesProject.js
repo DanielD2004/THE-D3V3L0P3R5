@@ -8,7 +8,7 @@ function search(){
         var img = document.getElementById("image");
         
         // sets color of topic back to black
-        for (i=0;i<=8;i++){
+        for (let i=0;i<=8;i++){
         let listArray = ["tiger", "elephant", "cat", "dog", "zebra", "lion", "monkey", "cheetah", "gorilla"]
         document.getElementById(listArray[i]).style.color= 'black';
         }
