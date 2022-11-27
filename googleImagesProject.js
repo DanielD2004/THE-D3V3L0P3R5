@@ -1,7 +1,13 @@
+// pre-condition: user enters a topic on the list
+// post-condition: an image of that topic is shown
+
 function search(){
-        
+        // gets user input from the search bar
         var input = document.getElementById("searchBar");
+        
         var img = document.getElementById("image");
+        
+        // sets color of topic back to black
         for (i=0;i<=8;i++){
         let listArray = ["tiger", "elephant", "cat", "dog", "zebra", "lion", "monkey", "cheetah", "gorilla"]
         document.getElementById(listArray[i]).style.color= 'black';
@@ -75,6 +81,8 @@ function search(){
 
 }
 
+// pre-conditon: none
+// post-condition: search bar is cleared
 function empty(){
         document.getElementById("image").src="projectImages/google.png";
         document.getElementById("searchBar").value = "";
