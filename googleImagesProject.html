@@ -1,9 +1,9 @@
-<!DOCTYPE hmtl/>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Google Images 2.0</title>
     <link href="googleImagesProject.css" rel="stylesheet"/>
-    <script src="googleImagesProject.js"></script>
+    
 </head>
 
 <body>
@@ -14,8 +14,8 @@
     
     <div class="imageBox">
         <input id="searchBar" type="search" placeholder="Search Animals...">
-        <input onclick="search();" type="submit" value="Search">
-        <input id="button" onclick="empty();" type="button" value="Clear">
+        <input onclick="search()" type="submit" value="Search">
+        <input id="button" onclick="empty()" type="button" value="Clear">
 
        
 
@@ -52,14 +52,14 @@
 
         <p id="message"></p>
         <br>
-        <p id="hyperLink"> Click <a href="https://images.google.ca/" id="link" >here</a> to see more images of this topic! </p>
+        <p id="linkMessage"> Click <a id="imgLink" target="_blank" >here</a> to see more images of this topic! </p>
    
     </div>
 
     
     <footer>© Designed By: Dennis, Daniel, Max, and Jacob</footer>
 
-    
+    <script src="googleImagesProject.js"></script>
 </body>
 
 </html>
