@@ -1,21 +1,23 @@
 function topics(i){
-  if (i == 1){
-    return topic1()
-  }
-  if (i == 2){
-    return topic2()
-  }
-  if (i == 3){
-    return topic3()
-  }
-  if (i == 4){
-    return topic4()
-  }
-  if (i == 5){
-    return topic5()
-  }
-  if (i == 6){
-    return topic6()
+  switch (i){
+    case 1:
+      return topic1()
+      break;
+    case 2:
+      return topic2()
+      break;
+    case 3:
+      return topic3()
+      break;
+    case 4:
+      return topic4()
+      break;
+    case 5:
+      return topic5()
+      break;
+    case 6:
+      return topic6()
+      break;
   }
 }
 
