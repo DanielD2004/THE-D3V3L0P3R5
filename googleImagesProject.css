@@ -67,3 +67,7 @@ footer{
 #linkMessage{
     visibility:hidden;
 }
+
+#testMsg{
+    display: none;
+} 
