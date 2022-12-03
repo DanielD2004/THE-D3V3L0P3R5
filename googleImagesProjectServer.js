@@ -3,12 +3,8 @@ var app = express();
 
 var port = 3000;
 
-app.post('/post', (req, res) => {
-    res.header("Access-Control-Allow-Origin", "*");
-
-    var z =req.query['data'];
-
-    switch (z.toLowerCase()) {
+function animalUrl(value) {
+    switch (value.toLowerCase()) {
         case "tiger":
             var url = 'https://img.freepik.com/premium-photo/close-up-face-tiger-isolated-black-background_66869-322.jpg'
             break;
@@ -36,11 +32,19 @@ app.post('/post', (req, res) => {
         case "gorilla":
             var url = 'https://img.freepik.com/premium-photo/western-lowland-gorilla-gorilla-gorilla-gorilla_477293-4212.jpg'
             break;
-
         default:
             var url = '';
             break;
     }
+
+    return url;
+}
+app.post('/post', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+
+    var z =req.query['data'];
+
+    var url = animalUrl(z);
     
     var jsonText = JSON.stringify({
         'url': url,

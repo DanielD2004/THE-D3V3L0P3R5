@@ -19,5 +19,9 @@
   "homepage": "https://github.com/DanielD2004/THE-D3V3L0P3R5#readme",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0"
   }
 }
