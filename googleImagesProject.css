@@ -61,8 +61,6 @@ footer{
 
 }
 
-
-
   .imagecont{
     width:500px;
     height:500px;
@@ -70,4 +68,8 @@ footer{
     margin: auto;
   }
 
+
+  .buttoncont{
+    text-align: center;
+  }
   
