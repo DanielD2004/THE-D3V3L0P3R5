@@ -1,7 +1,5 @@
-// pre-condition: user enters a topic on the list
-// post-condition: an image of that topic is shown
 
-//this function lets the user search up a topic in the search bar. if the topic is on the list, an image of that topic will appear on the screen.
+
 function search(){
         //gets user input from the searchbar
         var input = document.getElementById("searchBar");
@@ -131,7 +129,4 @@ function blackText(){
                 document.getElementById(listArray[i]).style.color= 'black';
                 }
 }
-
-        
-     
 
