@@ -1,0 +1,63 @@
+<!DOCTYPE hmtl/>
+<html>
+<head>
+    <title>Google Images 2.0</title>
+    <link href="googleImagesProject.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="googleImagesProject.js"></script>
+</head>
+
+<body>
+
+    <h1>Google Images 2.0</h1>
+    
+    <h2 id="description">Search up any of the topics from the list on the right!</h2>
+    
+    <div class="imageBox">
+        <input id="searchBar" type="search" placeholder="Search Animals...">
+        <input onclick="search()" type="submit" value="Search">
+        <input onclick="empty()" type="button" value="Clear">
+    </div>
+        <div  class="listColumn">
+           <p> <ul><u>List of Topics:</u> </ul>
+            <li id="tiger">Tiger</li>
+            <br>
+            <li id="elephant">Elephant</li>
+            <br>
+            <li id="cat">Cat</li>
+            <br>
+            <li id="dog">Dog</li>
+            <br>
+            <li id="zebra">Zebra</li>
+            <br>
+            <li id="lion">Lion</li>
+            <br>
+            <li id="monkey">Monkey</li>
+            <br>
+            <li id="cheetah">Cheetah</li>
+             <br>
+             <li id="gorilla">Gorilla</li></p>
+        </div> 
+    
+        <br><br>
+        <div class="imagecont">
+            <a href="https://images.google.ca/" target=”blank” id="theLink"><img id="image" ondblclick="zoomIn()" onclick="zoomOut()" style="border: 1px solid grey;" src="projectImages/google.png" alt="googleImage"> </a>
+        </div>
+        <br> <br> 
+
+        <div class="buttoncont">
+            <button onclick="zoomIn()">Zoom In</button>
+            <button onclick="zoomOut()">Zoom Out</button>
+        </div>
+        
+        <p id="message"></p>
+   
+    
+
+    
+    <footer>© Designed By: Dennis, Daniel, Max, and Jacob</footer>
+
+
+</body>
+
+</html>
